@@ -11,6 +11,7 @@ A simple backend API for Todo Application built using Node.js,Express.js,MongoDB
 - Delete Todos
 - Forgot Password
 - Reset Password
+- Logout
 - Protected Routes
 - MongoDB Integration
 
