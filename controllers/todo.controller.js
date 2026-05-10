@@ -1,7 +1,7 @@
 const Todo = require("../models/todo.model");
 const User = require("../models/user.model");
 
-// creatting user
+// creating user
 exports.createTodo = async (req,res) => {
     try {
 
@@ -26,7 +26,7 @@ exports.createTodo = async (req,res) => {
 
 }
 
-// get todos by uder id
+// get todos by user id
 exports.getTodos = async (req,res) => {
     const userId = req.user.id;
     // console.log(userId);
@@ -35,7 +35,7 @@ exports.getTodos = async (req,res) => {
 
     res.json(todos);
 }
-
+//update todos
 exports.updateTodo = async (req,res) => {
     try {
         console.log(req.user);
