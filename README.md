@@ -1,7 +1,7 @@
 # todo-app backend
 A simple backend API for Todo Application built using Node.js,Express.js,MongoDB, and JWT Authentication.
 
-#Features
+## Features
 - User Registration
 - User Login
 - JWT Authentication
@@ -12,7 +12,7 @@ A simple backend API for Todo Application built using Node.js,Express.js,MongoDB
 - Protected Routes
 - MongoDB Integration
 
-#Tech Stack
+## Tech Stack
 
 - Node.js
 - Express.js
