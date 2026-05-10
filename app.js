@@ -15,6 +15,10 @@ app.use(cookieParser());
 app.use("/api",todoRoute);
 app.use("/api",userRoute);
 
+app.get("/",(req,res) => {
+    res.send("Backend is running...")
+})
+
 
 
 
