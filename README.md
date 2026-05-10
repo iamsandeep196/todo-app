@@ -4,14 +4,14 @@ A simple backend API for Todo Application built using Node.js,Express.js,MongoDB
 ## Features
 - User Registration
 - User Login
-- JWT Authentication
-- Create Todo
+- Create Todos
 - Get Loged-in User Todos
 - Update Todos
 - Delete Todos
 - Forgot Password
 - Reset Password
 - Logout
+- JWT Authentication
 - Protected Routes
 - MongoDB Integration
 
