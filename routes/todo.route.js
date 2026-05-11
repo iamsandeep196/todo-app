@@ -5,7 +5,7 @@ const route = express.Router();
 
 
 route.post("/create", authMiddleware ,createTodo);
-route.get("/", authMiddleware ,getTodos);
+route.get("/todos", authMiddleware ,getTodos);
 route.put("/update/:id", authMiddleware , updateTodo);
 
 
