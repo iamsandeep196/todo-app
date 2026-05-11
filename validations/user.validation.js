@@ -3,7 +3,7 @@ const joi = require("joi");
 
 const registerValidation = joi.object({
 
-    name:joi.string().min(3).max(10).required().messages({
+    name:joi.string().min(3).max(20).required().messages({
         "string.empty":"Name is required",
         "string.min":"Name must be at least 3 characters"
     }),
