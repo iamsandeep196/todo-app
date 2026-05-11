@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 =======
-# todo-app backend
+# :rocket: Todo-app backend
 A simple backend API for Todo Application built using Node.js,Express.js,MongoDB, and JWT Authentication.
 
 ## Features
