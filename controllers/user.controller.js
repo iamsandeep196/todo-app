@@ -5,7 +5,7 @@ const crypto = require("crypto");
 const cookieParser = require("cookie-parser");
 const { registerValidation , loginValidation }= require("../validations/user.validation");
 
-
+// user register controller
 exports.registerUser = async (req,res) => {
 
     try {
@@ -38,6 +38,7 @@ exports.registerUser = async (req,res) => {
 
 }
 
+// user login controller
 exports.loginUser = async (req,res) => {
     try {
 
@@ -67,9 +68,6 @@ exports.loginUser = async (req,res) => {
             }
         );
 
-        // set cookie
-
-        // res.status(200).json({token});
 
         // set cookies 
         res.cookie("token",token);
@@ -87,6 +85,7 @@ exports.loginUser = async (req,res) => {
     }
 }
 
+// logout user controller
 exports.logoutUser = async (req,res) => {
     try {
 
@@ -104,6 +103,7 @@ exports.logoutUser = async (req,res) => {
     }
 }
 
+// user forgot-password controller
 exports.forgotPassword = async (req,res) => {
     
     try {
@@ -144,7 +144,7 @@ exports.forgotPassword = async (req,res) => {
     }
 }
 
-
+// user reset-password controller
 exports.resetPassword = async (req,res) => {
     try {
         const { token } = req.params;
