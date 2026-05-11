@@ -79,20 +79,38 @@ exports.updateTodo = async (req,res) => {
 
 }
 
+// Delete todo controller
+
 exports.deleteTodo = async (req,res) => {
-    const { id } = req.params;
 
-    const todo = await Todo.findByIdAndDelete(id);
+    try {
 
-    if(!todo) {
-        return res.status(404).json({
-            msg : "Todo not found"
+        const { id } = req.params;
+
+        const todo = await Todo.findByIdAndDelete(id);
+
+        if(!todo){
+            
+            return res.status(404).json({
+                msg:"Todo not found"
+            });
+        }
+
+        res.status(200).json({
+            msg:"Todo deleted successfully"
         });
+
+
+    }
+    catch (error){
+
+        res.status(500).json({
+            msg:"Internal server error",
+            error:error.message
+        })
     }
 
-    res.status(200).json({
-        msg : "Todo deleted successfully"
-    })
+
 }
 
 
